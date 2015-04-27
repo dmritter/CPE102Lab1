@@ -6,7 +6,7 @@ public class SimpleList
    public static List<Integer> squareAll(List<Integer> values)
    {
       List<Integer> newValues = new LinkedList<Integer>();
-      for(int i=0; i < values.size();i++)
+      for(int i=0; i <= values.size();i++)
       {
          newValues.add(values.get(i)*values.get(i));
       }

@@ -2,7 +2,7 @@ public class SimpleLoop
 {
    public static int sum(int low, int high)
    {
-      int low_temp = low;
+      int private low_temp = low;
       int sum = 0;
       while(high >= low_temp)
       {

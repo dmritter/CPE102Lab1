@@ -5,7 +5,7 @@ public class BetterLoop
       boolean check = false;
       for(int i = 0; i < values.length; i++)
       {
-         if(values[i] == v)
+         if(values[i] = v)
          {
             check = true;
          }

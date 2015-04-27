@@ -1,0 +1,37 @@
+public class PolarPoint
+implements Point
+{
+   public class CartesianPoint(double radius, double angle)
+   {
+      CartesianPoint.radius = radius;
+      CartesianPoint.angle = angle;  
+   }
+
+   public double class xCoordinate()
+   {
+      return CartesianPoint.radius*Math.cos(angle);
+   }
+
+   public double class yCoordinate()
+   {
+      return CartesianPoint.radius*Math.sin(angle);
+   }
+
+   public double class radius()
+   {
+      return CartesianPoint.radius;
+   }
+   
+   public double class angle()
+   {
+      return CartesianPoint.angle;
+   }
+   
+   public Point class rotate90()
+   {
+      Point rotate_point = new PolarPoint(radius, angle + Math.PI);
+      return rotate_point;
+   }
+      
+   
+}

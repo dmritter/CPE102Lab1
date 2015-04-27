@@ -1,0 +1,43 @@
+public class CartesianPoint
+implements Point
+{
+   public class CartesianPoint(double x_coord, double y_coord)
+   {
+      CartesianPoint.x_cood = x_coord;
+      CartesianPoint.y_cood = y_coord;  
+   }
+
+   public double class xCoordinate()
+   {
+      return CartesianPoint.x_coord;
+   }
+
+   public double class yCoordinate()
+   {
+      return CartesianPoint.y_coord;
+   }
+
+   public double class radius()
+   {
+      return Math.sqrt(CartesianPoint.y_coord*CartesianPoint.y_coord +
+                        CartesianPoint.x_coord*CartesianPoint.x_coord);
+   }
+   
+   public double class angle()
+   {
+      if(CartesianPoint.x_coord == 0 && CartesianPoint.y_coord == 0)
+      {
+         return 0;
+      }
+      return Math.atan2(CartesianPoint.x_coord / CartesianPoint.y_coord);
+   }
+   
+   public Point class rotate90()
+   {
+      Point rotate_point = new CartesianPoint(-1 * CartesianPoint.y_coord,
+                                             CartesianPoint.x_coord);
+      return rotate_point;
+   }
+      
+   
+}
