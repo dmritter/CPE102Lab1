@@ -27,17 +27,16 @@ class TestCases(unittest.TestCase):
       self.assertEqual(savings.getBalance(), 1018)
    
    def test_5(self):
-      savings = account.PremiumAccount(1000)
+      savings = account.Account(1000)
       self.assertEqual(savings.getBalance(), 1000)
       savings.purchaseItem(30)
       self.assertEqual(savings.getBalance(), 973)
    
    def test_6(self):
-      savings = account.PremiumAccount(567)
-      self.assertEqual(savings.getBalance(), 567)
-      savings.returnItem(95)
-      savings.purchaseItem(95)
-      self.assertEqual(savings.getBalance(), 567)
+      savings = account.Account(1000)
+      self.assertEqual(savings.getBalance(), 1000)
+      savings.returnItem(20)
+      self.assertEqual(savings.getBalance(), 1020)
    
 
 # Run the unit tests.
